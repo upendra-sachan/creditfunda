@@ -1,0 +1,48 @@
+@charset "utf-8"; /* CSS Document */
+*{outline:none;}
+body{background-color:#fff; padding:0; margin:0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}
+button{cursor:pointer;}
+.clearfix{clear:both;}
+
+#main-container{border:3px solid #017dc1; position:relative; background:#fff; padding:0 1px 0 0; margin:5% auto; width:70%; height:80%; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px;}
+#main-container a.compare-box-close{background:#787878; border-radius:100%; color:#fff; font-weight:bold; height:30px; line-height:28px; position:absolute; right:-12px; text-align:center; text-decoration:none; width:30px; top:-13px;}
+#cardComaprePopup{display:block; overflow-y:scroll; -webkit-overflow-scrolling:touch;}
+.scroll-pane{width:100%;height:200px;overflow:auto;}
+#container{width:100%;padding:20px;margin:20px auto; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+.fade{display:block; position:fixed; top:0%; left:0%; width:100%; height:100%; background-color:#000; z-index:-1; -moz-opacity:0.7; opacity:.70; filter:alpha(opacity=70);}
+.compare-mul-feature{float:left;width:100%;}
+
+#main-container ul, #main-container ul li{margin:0; padding:0; list-style:none; font-size:12px; color:#505050;}
+#main-container ul{width:100%; display:table; border-bottom:1px solid #ededed;}
+#main-container ul.card-detail{padding-right:17px;}
+#main-container ul li{padding:10px 15px; display:table-cell; width:25%; vertical-align:middle; word-break:break-word;}
+#main-container ul.card-detail li{vertical-align:top;}
+#main-container ul.disclaimer-list{padding-bottom:15px; border:0;}
+#main-container ul.disclaimer-list li{width:100%; padding:10px 15px 0; display:block;}
+#main-container li.col-0, #main-container li.col-1, #main-container li.col-2, #main-container li.col-3, #main-container li.col-3{width:75%;}
+#main-container.colcount-2 li.col-0, #main-container.colcount-2 li.col-1{width:37.5%;}
+#main-container.colcount-3 li.col-0, #main-container.colcount-3 li.col-1, #main-container.colcount-3 li.col-2{width:25%;}
+#main-container.colcount-4 li.col-0, #main-container.colcount-4 li.col-1, #main-container.colcount-4 li.col-2, #main-container.colcount-4 li.col-3{width:18.75%;}
+#main-container ul ul{border:0;}
+#main-container ul ul li{display:block; width:100%; padding:5px 0;}
+
+.cards{margin:0 0 10px;}
+.cards img{max-width:100%; height:auto;}
+.cardname{color:#f8740a; font-size:13px; text-transform:uppercase;}
+.cardcategoroy{color:#505050;}
+#main-container ul.cards-benefits-heading li{color:#1c4e7a; font-size:14px; padding:30px 15px 10px 15px; text-transform:uppercase; width:100%; display:block;}
+#main-container ul.cards-benefits:hover{background:#ededed;}
+
+@media only screen and (max-width:1024px){
+	#main-container{width:90%;}
+}
+
+@media only screen and (max-width:768px){
+	#main-container{width:95%;}
+}
+@media only screen and (max-width:640px){
+
+}
+
+

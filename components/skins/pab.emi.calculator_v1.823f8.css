@@ -1,0 +1,470 @@
+/*
+Theme Name:Paisabazaar
+Author:Paisabazaar
+Author URI:http://www.paisabazaar.com
+Version: 1.6
+Updated On: 13-Jun-2016
+*/
+.emi-calculator{position:relative; font-size:14px; clear:both; margin:15px 0; width:100%; display:table; border:solid #e5e5e5 1px;}
+.emi-calculator:after{clear:both; content:''; display:table;}
+.emi-calculator-span{border:0; color:#f6931f; font-weight:bold;}
+.emi-calculator div.calculator{float:left; display:block; width:100%; padding-bottom:30px;}
+.emi-calculator .calculator_left{float:right; width:28%; text-align:center; padding:15px;}
+.calculator_left_content{border:1px solid #e5e5e5; background:#f6f6f6; overflow:hidden; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+.glitter-price-calculator.emi-calculator .calculator_left label{line-height:16px; display:block; float:left; background:#f6f6f6; padding:14px 0 16px 10px; font-size:13px; font-weight:bold; color:#7a7a7a; width:39%; text-align:left;}
+.emi-calculator .calculator_left label{line-height:16px; display:block; float:left; background:#f6f6f6; padding:14px 0 16px 10px; font-size:13px; font-weight:bold; color:#7a7a7a; width:55%; text-align:left;}
+.emi-calculator .calculator_left span.slider_2_span, .emi-calculator .calculator_left span.slider_1_span, .emi-calculator .calculator_left span.slider_3_span{width:39%;}
+.retire-note{font-size:11px;}
+span.emi_highlight_head{height:auto !important; padding:12px 0 !important; width:41% !important;}
+.emi-calculator .calculator_left span.emi-calculator-span{font-weight:bold; color:#f19224; font-size:20px;}
+.emi-calculator .calculator_left span.fd-calculator-span{display:block; float:left; background:#f6f6f6; padding:15px 0; font-weight:bold; width:39%; color:#f19224; font-size:18px; height:22px;}
+.emi-calculator .pre_payment_calc span.emi-calculator-span{padding:26px 0;}
+
+.emi-calculator .calculator_left label.emi_highlight_txt{background:#014667; color:#fff; font-size:16px;}
+.emi-calculator .calculator_left label.fd_highlight_txt{background:#014667; color:#fff; font-size:13px;}
+.emi-calculator .calculator_left span.emi_highlight_head{background:#014667; color:#fff; border-right:solid #fff 1px;}
+.emi-calculator .calculator_right{float:left; width:72%; padding:5px 15px; border-right:solid #e5e5e5 1px;}
+.emi-calculator .calculator_right h2{border-radius:20px; font-size:13px; background:none; border:solid #e5e5e5 0px; padding:2px 30px 2px 0px; margin:-1px 0 10px 0; display:block; float:left; font-weight:bold; color:#333; position:relative;}
+.emi-calculator .calculator_right h4{background:rgba(0, 0, 0, 0) none repeat scroll 0 0; border:0 solid #e5e5e5; border-radius:20px; color:#333; display:block; float:left; font-size:13px; font-weight:bold; margin:-1px 0 10px; padding:2px 30px 2px 10px; position:relative;}
+.emi-calculator .calculator_right b{font-size:13px; margin:10px 0 0 0;}
+#slider_1, #slider_2, #slider_3, #slider_4{clear:both; background:#e5e5e5; padding:5px; border:solid #dedddd 1px; border-radius:30px;}
+#slider_1 .ui-slider-range, #slider_2 .ui-slider-range, #slider_3 .ui-slider-range, #slider_4 .ui-slider-range{height:3px; top:20%;}
+#slider_1 .ui-slider-handle, #slider_2 .ui-slider-handle, #slider_3 .ui-slider-handle, #slider_4 .ui-slider-handle{background:url(../images/handle_slider.png) no-repeat; width:16px; height:16px; top:-1px; margin-left:-7px; cursor:pointer;}
+.ui-slider .ui-slider-range{position:relative;}
+.calculator_right .slider-block .ui-slider-label{top:10px; font-size:12px;}
+.calculator_right .ui-slider-pips .ui-slider-pip:hover .ui-slider-label{color:#fcad4d;}
+.bdrLine{width:100%; height:1px; background:#e3e3e3; overflow:hidden;}
+.calculator_right .ui-slider-pips .ui-slider-line{height:7px; top:-2px;}
+
+.calculator_tab{margin:20px 0 0 0; height:30px; clear:both; display:inline-block;}
+.calculator_tab li{float:left; margin:0 1px 10px 0;}
+.calculator_tab li a{padding:10px 25px; background:#d7d7d7; color:#696969; font-size:13px; font-weight:bold; transition:background 0.5s;}
+.calculator_tab li a:hover{background:#f19224; color:#fff;}
+.calculator_tab li a.active{background:#f19224; color:#fff;}
+h1.calculator_heading{font-size:22px; color:#014667; margin:20px 0 5px; font-weight:500;}
+.ui-slider-float .ui-slider-tip, .ui-slider-float .ui-slider-tip-label{background:#fff; color:#014667; padding:0 5px; border:solid #ccc 1px; font-size:13px; height:auto;}
+.form-text, .form-select{border:1px solid #dcdcdc; padding:6px 10px; color:#999; margin:0 0 0 0px; float:left; text-align:center; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;}
+td .form-text, td .form-select{width:100%;}
+.calculator_left h3{background:#014667; color:#fff; font-size:18px; padding:10px 0 10px 5px;}
+.calculator_right .awesome-slider .ui-slider-pip > .ui-slider-label{width:8.1em !important;}
+.rs_bg{background:#e5e5e5; padding:3px 8px 3px 8px; float:left; margin:0 0px 0 0;}
+.time_caption{margin:0 5px 0 0;}
+.calculator_left a.quote_data{background:#f76706; text-align:center; color:#fff; cursor:pointer; display:inline-block; font-weight:bold; padding:8px 20px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; transition:background 0.4s; -moz-transition:background 0.4s; -webkit-transition:background 0.4s;}
+.calculator_left a:hover.quote_data{background:#e98342;}
+.calculator_right .amount_type, .calculator_right .loan_tenure_month{margin:10px 15px 10px 0; display:inline-block; vertical-align:middle;}
+.calculator_right .awesome-slider .ui-slider-pip:nth-of-type(5n+1) > .ui-slider-label{font-size:12px; width:60px; height:35px;}
+.emi-calculator .error{color:#ff2a00; border:solid #ff2a00 1px;}
+
+/* =Nav
+-------------------------------------------------------------- */
+.rmm{display:block; position:relative; width:100%;}
+.rmm a{color:#ebebeb; text-decoration:none;}
+/* sublevel menu - in construction */
+.rmm ul li ul, .rmm ul li ul li, .rmm ul li ul li a{display:none !important; height:0px !important; width:0px !important;}
+/* */
+.rmm-main-list:after{clear:both; content:''; display:table;}
+.rmm .rmm-main-list li{display:block; float:left;}
+.rmm-toggled{display:none; width:100%; position:relative; overflow:hidden; margin:0 auto !important;}
+.rmm-button:hover{cursor:pointer;}
+.rmm .rmm-toggled ul{display:none; margin:0px !important; padding:0px !important;}
+.rmm .rmm-toggled ul li{display:block; margin:0 auto !important; overflow:hidden;}
+/* GRAPHITE STYLE */
+.rmm.graphite .rmm-main-list li a{display:block; padding:8px 25px; background:#e5e5e5; color:#666; font-weight:700; border-right:1px solid #fff; transition:all 0.3s linear 0s; -moz-transition:all 0.3s linear 0s; -webkit-transition:all 0.3s linear 0s;}
+.rmm.graphite .rmm-main-list li.first a{border-radius:5px 0 0 5px; -moz-border-radius:5px 0 0 5px; -webkit-border-radius:5px 0 0 5px;}
+.rmm.graphite .rmm-main-list li.last a{border:0; border-radius:0 5px 5px 0; -moz-border-radius:0 5px 5px 0; -webkit-border-radius:0 5px 5px 0;}
+.rmm.graphite .rmm-main-list li.first.last a{border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+.rmm.graphite .rmm-main-list li a:hover, .rmm.graphite .rmm-main-list li a.active{background:#f19224; color:#fff;}
+
+.rmm.graphite .rmm-toggled{width:100%; background-color:#f19224; min-height:36px;}
+.rmm.graphite .rmm-toggled-controls{display:block; height:36px; color:white; text-align:left; position:relative;}
+.rmm.graphite .rmm-toggled-title{position:relative; top:9px; left:15px; font-size:16px; color:white;}
+.rmm.graphite .rmm-button{display:block; position:absolute; right:15px; top:8px;}
+.rmm.graphite .rmm-button span{display:block; margin-top:3px; height:2px; background:white; width:15px;}
+.rmm.graphite .rmm-toggled ul li a{display:block; padding:8px 15px; background:#e5e5e5; color:#666; font-weight:700; border-top:1px solid #fff; transition:all 0.3s linear 0s; -moz-transition:all 0.3s linear 0s; -webkit-transition:all 0.3s linear 0s;}
+.rmm.graphite .rmm-toggled ul li a:hover, .rmm.graphite .rmm-toggled ul li a.active{background:#f19224; color:#fff;}
+.fillCell{background:#f19224 !important; color:#fff;}
+.fillRowRed{background:#FFE0E0;}
+.fillRowGreen{background:rgb(211, 240, 228); z-index:-1;}
+.fillRowRed{z-index:-1;}
+ strong{font-weight:bold!important;}
+.calculator_left h3 span{font-size:18px; font-weight:bold;}
+.boxer{display:table; border-collapse:collapse; width:100%; margin-bottom:15px;}
+.boxer .box-row{display:table-row;}
+.boxer .box{display:table-cell; text-align:center; vertical-align:top; border:1px solid #d5d5d5; padding :10px 10px; font-size:12px;}
+.boxer .clo_name{display:table-cell; text-align:left; vertical-align:top; border:1px solid #266b8c; padding :10px 10px; background:#014667 none repeat scroll 0 0; border-right:1px solid #266b8c; color:#fff; font-size:13px; font-weight:bold;}
+.box-row .green{color:#35911f; dispaly:table-cell; background:#d3f0e4 url(../images/greenUpArrow.png) 71px 19px no-repeat;}
+.box-row .red{color:#d90000; dispaly:table-cell; background:#ffe0e0 url(../images/redDownArrow.png) 71px 19px no-repeat;}
+.gold_price_dis{padding:15px 30px 8px; font-size:12px;}
+.gold_price_update{margin-left:350px;}
+.disclaimer_gold_price{float:left; font-size:11px; line-height:14px; text-align:left; width:100%; text-align:justify;}
+strong{font-weight:bold!important;}
+.glitter-price-calculator.emi-calculator .calculator_right{padding:15px;}
+.glitter-price-calculator.emi-calculator .calculator_left span.emi_highlight_head{border-right:0 solid #014667; font-size:15px; width:57% !important;}
+.glitter-price-calculator.emi-calculator .calculator_left label{padding:14px 0 16px 12px}
+.glitter-price-calculator.emi-calculator .gold_price_dis{width:100%; padding:5px 0 10px 0px;}
+.glitter-price-calculator.emi-calculator .gold_price_dis span.gold_price_update{margin-left:0; float:right;}
+.calculator_heading{margin:20px 0 0;}
+.selBox{width:166px; float:left;}
+
+.post_quote_personal_loan{padding:13px 20px 13px 20px; background:#F9F9F9;}
+.menu_main .nav{margin:5px 0 20px;}
+a.main-heading{color:#014667; border-bottom:1px solid #000000; font-size:17px; line-height:30px;}
+a.main-heading:hover{color:#007CC2;}
+a.sub-heading{color:#007CC2; background:url("../images/blue-arrow.png") no-repeat left center transparent; color:#007CC2; padding-left:15px;}
+a.sub-heading:hover{text-decoration:underline;}
+.calc-text{font-size:12px; line-height:17px; margin-bottom:18px;}
+.pl-20{padding-left:15px;}
+.line-style{margin-top:20px; margin-bottom:15px; width:100%; border-bottom:1px solid #e2e2e2;}
+.retirement_calculator .calculator_right h2{width:58%!important;}
+.retirement-left-box{display:block!important;}
+.retirement-left-box h3{display:block!important;}
+.retirement-left-box label{display:block!important;}
+.retirement-left-box .bdrLine{display:block!important;}
+
+/* SIP Calculator */
+.w49{width:49%!important;}
+.float-left{float:left!important; margin:0;}
+.float-right{float:right!important; margin:0;}
+.sip-calculator .calculator_right { border:1px solid #acaeb1; padding:0; border-radius:10px;}
+.sip-calculator{border:none;}
+.sip-calculator .w49 .form-group { margin: 0 0 30px; text-align: center;}
+.sip-calculator .w49 .form-group label{margin:0; padding:0; color:#2679c0; font-size:15px; font-weight:bold;line-height: 30px;}
+.sip-calculator #slider_1, .sip-calculator #slider_2, .sip-calculator #slider_3, .sip-calculator #slider_4, .sip-calculator #slider_5, .sip-calculator #slider_6 { border: 1px solid #cfcfcf;background: #f6f6f6;}
+.sip-calculator #slider_1 .ui-slider-range, .sip-calculator #slider_2 .ui-slider-range, .sip-calculator #slider_3 .ui-slider-range, .sip-calculator #slider_4 .ui-slider-range,.sip-calculator #slider_5 .ui-slider-range,.sip-calculator #slider_6 .ui-slider-range {height: 1px;}
+.sip-calculator #slider_1 .ui-slider-handle, .sip-calculator #slider_2 .ui-slider-handle, .sip-calculator #slider_3 .ui-slider-handle, .sip-calculator #slider_4 .ui-slider-handle, .sip-calculator #slider_5 .ui-slider-handle, .sip-calculator #slider_6 .ui-slider-handle { background: rgba(0, 0, 0, 0) url("../images/handle_slider.png") no-repeat scroll 0 0 / 11px auto; top:0; margin-left: -5px;}
+.sip-calculator #slider_1, .sip-calculator #slider_2, .sip-calculator #slider_3, .sip-calculator #slider_4,.sip-calculator #slider_5,.sip-calculator #slider_6 {
+    background: #e5e5e5 none repeat scroll 0 0;
+    border: 1px solid #dedddd;
+    border-radius: 30px;
+    clear: both;
+    padding: 5px;
+}
+.sip-calculator .ui-slider-horizontal {height: 13px;}
+.sip-calculator .icon-left input, .sip-calculator .icon-right .icon { border-radius: 0 10px 10px 0;}
+.sip-calculator .icon-left .icon, .sip-calculator .icon-right input { border-radius: 10px 0 0 10px;}
+.sip-calculator .padding-20{padding:20px;}
+.sip-calculator .border-radius-btm-lft{border-bottom-left-radius:4px;}
+.sip-calculator h3.result {background: #014667;color: #fff; font-size: 18px; padding: 6px 0; text-align: center;border-bottom: 1px solid;border-radius: 10px 10px 0 0}
+.sip-calculator .calculator_left_content{border:none;border-bottom-left-radius:8px;border-bottom-right-radius:8px;border-top-left-radius:0;border-top-right-radius:0;}
+.txt-align-center{text-align:center;}
+.sip-calculator .bb-1{border-bottom: 1px solid #acaeb1; background:#e8e4e4; color: #6d6e71; font-weight: bold;}
+.mb-0{margin-bottom:0!important;}
+.sip-calculator .emi-calculator-span {color: #014667;}
+.sip-calculator span.result { float: left; font-size: 16px; font-weight: bold; line-height: 45px; margin: 0 15px;}
+.sip-calculator p.result-data{ color: #ffffff; font-size: 14px; text-align: inherit;}
+.sip-calculator p.result-data span{ display: inline-block; border:none; border-bottom:1px dashed #ffffff; text-align:center; color:#ffffff; font-weight:bold}
+.sip-calculator p.result-data span.target_corpus{width:auto;}
+.sip-calculator p.result-data span i{display: none}
+.text_capital{text-transform:uppercase}
+/* SIP Calculator */
+/*for (-new) calculator pages*/
+.links{margin: 0 auto;width: 90%;}
+.quote_link{font-weight: bold;background: #F9CE31;padding: 5px;border-radius: 15px;float: left;text-align: center;width: 100%;margin-top: 18px;color: #A44500;box-shadow: 1px 2px 1px #B58A00;text-transform: uppercase;text-shadow: 1px 1px 1px #e1e1e1;}
+.banner-table {font-family: 'Lato', sans-serif;font-size:16px;color:#414042;margin-top:20px;text-align:center;border:1px solid #afb2b5;font-weight:bold;line-height:26px;}
+.top-wh-f16 {color:#FFF; line-height:28px !important; padding:10px; font:bold 18px 'Lato', sans-serif !important;}
+.blue-bf20 { font-weight:bold !important; color:#1078aa; font-size:22px;}
+/*for (-new) calculator pages end*/
+@media all and (max-width:480px){
+	#nav-trigger{display:block;}
+	nav#nav-main{display:none;}
+	nav#nav-mobile{display:block;} 
+}
+@media only screen and (min-width:768px) and (max-width:990px){
+	.emi-calculator .calculator_left label.emi_highlight_txt{width:30%; height:22px; float:left; clear:both; text-align:right;}
+	.emi-calculator .eligibility_loan label.emi_highlight_txt{width:23.7%;}
+	.emi-calculator .calculator_left span.emi_highlight_head{width:68.4%; margin:0 0 10px 0; text-align:center;}
+	.bdrLine{width:inherit; overflow:inherit; display:none;}
+	.emi-calculator .eligibility_loan label{width:25%; padding-left:55px; line-height:22px; text-align:left;}
+	.emi-calculator .eligibility_loan .emi-calculator-span{text-align:left;}
+	.emi-calculator .eligibility_loan .fd-calculator-span{text-align:left;}
+	#navigation .nav ul li a{font-size:12px; padding:0 9px;}
+	#navigation .mmMenu li:hover ul.dropDown{width:14%;}
+	#navigation .mmMenu li:hover ul.dropDown li a{font-size:12px; padding:0 8px;}
+	#slider_1_txt{margin:0;}
+	.emi-calculator .pre_payment_calc span.emi-calculator-span{padding:15px 0;}
+	.emi-calculator .pre_payment_calc span.fd-calculator-span{padding:15px 0;}
+}
+
+@media only screen and (min-width:640px) and (max-width:800px){
+	.calculator_heading{margin:0px 0 0;}
+}
+
+@media only screen and (min-width:640px) and (max-width:767px){
+	.emi-calculator .pre_payment_calc label{width:30%;}
+	.emi-calculator .eligibility_loan .emi-calculator-span{text-align:left;}
+	.emi-calculator .eligibility_loan .fd-calculator-span{text-align:left;}
+	.emi-calculator .calculator_left span.fd-calculator-span{width:14%; font-size:14px; padding:15px 0px;}
+	.emi-calculator .calculator_left label.emi_highlight_txt{width:30%; height:22px; float:left; clear:both;}
+	.emi-calculator .calculator_left span.emi_highlight_head{width:68.2%; margin:0 0 10px 0; text-align:center;}
+	.bdrLine{width:inherit; overflow:inherit; display:none;}
+	.emi-calculator .loan_calc label{padding-left:45px; width:auto;}
+	.emi-calculator .loan_calc .emi_highlight_txt{padding-left:0; width:31% !important;}
+	.calculator_right .awesome-slider .ui-slider-pip:nth-of-type(5n+1) > .ui-slider-label{font-size:11px;}
+	#slider_1_txt{margin:0;}
+	.emi-calculator .pre_payment_calc span.emi-calculator-span{padding:15px 0;}
+	.emi-calculator .pre_payment_calc span.fd-calculator-span{padding:15px 0;}
+	.emi-calculator .pre_payment_calc span.emi_highlighted_head{font-size:17px;}
+}
+@media only screen and (max-width:800px){
+	.w36-p{display:none;}
+	.retirement_calculator .calculator_right h4{text-align:left !important; width:70% !important; margin-bottom:5px;}
+	.retire-note{display:none;}
+	.emi-calculator .calculator_right,
+	.emi-calculator .calculator_left{width:100%; border:none; float:none;}
+}
+
+@media only screen and (max-width:768px){
+	.calculator_heading{margin:0px 0 0 15px;}
+	.rmm.graphite .rmm-main-list li a{padding:8px 22px;}
+	.rmm.graphite .rmm-main-list li a.active{padding:8px 23px;}
+	.emi-calculator .calculator_left span.emi_highlight_head{width:67.3%;}
+	.w36-p{display:none;}
+	.retirement_calculator .calculator_right h4{text-align:left !important; width:70% !important; margin-bottom:5px;}
+	.retire-note{display:none;}
+	.retirement-left-box{padding-bottom:15px!important;}
+}
+
+@media only screen and (max-width:640px){
+	.calculator_heading{margin:0px 0 0 15px;}
+	.rmm.graphite .rmm-main-list li a{padding:8px 22px;}
+	.rmm.graphite .rmm-main-list li a.active{padding:8px 23px;}
+	.emi-calculator .calculator_left span.emi_highlight_head{width:68.8%; float:right;}
+	.w36-p{display:none;}
+	.retire-note{display:none;}
+	.retirement-left-box{padding-bottom:15px!important;}
+	.sip-calculator .w49 .form-group label { text-align: center; width: 100%;}
+	.sip-calculator .slider_1_txt{width:88%;}
+	.sip-calculator .slider_3_txt{width:76%;}
+	.sip-calculator .slider_2_txt{width:84%;}
+	.sip-calculator span.result {text-align: center; width:96%;}
+}
+
+@media only screen and (max-width:603px){
+	.row_main{width:96%;}
+	.emi-calculator .calculator_left span.emi_highlight_head{float:right; width:61%;}
+	ul.rmm-main-list{width:100%; float:left;}
+	ul.rmm-main-list li a{padding:8px 10px;}
+	ul.rmm-main-list li a.active, ul.rmm-main-list li a:hover{padding:8px 10px;}
+	.rmm.graphite .rmm-main-list li a.active{padding:8px 18px;}
+	.rmm.graphite .rmm-main-list li a{padding:8px 17px;}
+	.w36-p{display:none;}
+	.retirement_calculator .calculator_right h4{text-align:left !important; width:70% !important; margin-bottom:5px;}
+	.retire-note{display:none;}
+	.retirement-left-box{padding-bottom:15px!important;}
+}
+
+@media only screen and (max-width:600px){
+	.rmm.graphite .rmm-main-list li a{padding:8px 16px 8px 16px;}
+	.emi-calculator .calculator_left span.fd-calculator-span{width:16%; font-size:18px;}
+	.emi-calculator .calculator_left label.emi_highlight_txt{width:8%;}
+	.emi-calculator .calculator_left span.emi_highlight_head{width:10%;}
+	.bdrLine{width:inherit; overflow:inherit;}
+	#slider_1, #slider_2, #slider_3, #slider_4{display:none;}
+	.emi-calculator .eligibility_loan span.emi-calculator-span{font-size:13px; padding:14px 6px; width:17%;}
+	.emi-calculator .eligibility_loan span.fd-calculator-span{font-size:13px; padding:14px 6px; width:17%;}
+	.emi-calculator .eligibility_loan label{width:23%;}
+	.bdrLine{width:inherit; overflow:inherit; display:none;}
+	.emi-calculator .calculator_left label.emi_highlight_txt{padding:15px 2px; text-align:center; width:48% ; height:20px; font-size:15px;}
+	.emi-calculator .calculator_left span.emi_highlight_head{font-size:13px; padding:15px 3px; text-align:left; width:49.6%; height:20px; margin:0 0 10px 0;}
+	.emi-calculator .pre_payment_calc_right h4{width:36%;}
+	.calculator_right .awesome-slider .ui-slider-pip:nth-of-type(5n+1) > .ui-slider-label{font-size:11px;}
+	.loan_tenure_month{display:none;}
+	#slider_1_txt{margin:0;}
+	.emi-calculator .calculator_left span.emi_highlight_head{float:right; width:49.8%;}
+	.w36-p{display:none;}
+	.retirement_calculator .calculator_right h4{text-align:left !important; width:70% !important; margin-bottom:5px;}
+	.retire-note{display:none;}
+	.retirement-left-box{padding-bottom:15px!important;}
+}
+
+@media only screen and (max-width:568px){
+	#headerPart .logo{margin-left:15px;}
+	.logo a img{margin-left:15px;}
+	.rmm.graphite .rmm-main-list li a{padding:8px 15px;}
+	.rmm.graphite .rmm-main-list li a.active{padding:8px 15px;}
+	.emi-calculator .calculator_left span.emi_highlight_head{width:49.7%;}
+	.w36-p{display:none;}
+	.retirement_calculator .calculator_right h4{text-align:left !important; width:70% !important; margin-bottom:5px;}
+	.retire-note{display:none;}
+	.retirement-left-box{padding-bottom:15px!important;}
+	.retirement_calculator .calculator_right h2{width:94% !important;}
+	span.emi_highlight_head{height:auto !important; padding:13px 0 !important; width:51% !important;}
+}
+
+@media only screen and (max-width:480px){
+	.emi-calculator .calculator_left label.emi_highlight_txt{width:8%;}
+	.emi-calculator .calculator_left span.emi_highlight_head{width:10%;}
+	.bdrLine{width:inherit; overflow:inherit;}
+	#slider_1, #slider_2, #slider_3, #slider_4{display:none;}
+	.bdrLine{width:inherit; overflow:inherit; display:none;}
+	.emi-calculator .calculator_left label.emi_highlight_txt{padding:7px 5px; text-align:center; width:43%; display:block;}
+	.emi-calculator .calculator_left span.emi_highlight_head{font-size:19px; height:22px; padding:6px 5px; text-align:left; width:52%; display:block;}
+	.loan_tenure_month{display:none;}
+	#slider_1_txt{margin:0;}
+	.calculator_heading{margin:0px 0 0 12px;}
+	.w36-p{display:none;}
+	.retire-note{display:none;}
+	.emi-calculator .calculator_left span.emi-calculator-span{font-size:16px;}
+}
+
+@media only screen and (max-width:460px){
+	.emi-calculator .calculator_left span.emi_highlight_head{float:right; width:51.5%; margin-bottom:10px;}
+	.w36-p{display:none;}
+	.retirement_calculator .calculator_right h4{text-align:left !important; width:100% !important; margin-bottom:5px;}
+	.retire-note{display:none;}
+	.retirement-left-box{padding-bottom:15px!important;}
+	.retirement_calculator .calculator_right h2{width:94% !important;}
+}
+
+@media only screen and (max-width:420px){
+	.row_main{width:98%;}
+	#headerPart .logo{width:66%;}
+	.calculator_heading{margin:0px 0 0 10px;}
+	.rs_bg{padding:3px 6px;}
+	.w36-p{display:none;}
+	.retirement_calculator .calculator_right h4{text-align:left !important; width:100% !important; margin-bottom:5px;}
+	.retire-note{display:none;}
+	.retirement-left-box{padding-bottom:15px!important;}
+	.emi-calculator .icon-group{position: relative;}
+	.emi-calculator .icon-group input{width: 100%; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; text-align: left;}
+	.emi-calculator .icon-group.icon-left input{padding-left: 35px;}
+	.emi-calculator .icon-group .icon{position: absolute;}
+	.emi-calculator .icon-group.icon-left .icon{left: 0;}
+	.emi-calculator .icon-group.icon-right .icon{right: 0; margin-right: 0;}
+}
+@media only screen and (max-width:380px){
+	.emi-calculator .calculator_left label.emi_highlight_txt{display:block; padding:7px 5px; text-align:center; width:42.6%;}
+	.emi-calculator .calculator_left span.emi_highlight_head{margin-bottom:10px; width:51%;}
+	.w36-p{display:none;}
+	.retirement_calculator .calculator_right h4{text-align:left !important; width:100% !important; margin-bottom:5px;}
+	.retire-note{display:none;}
+	.retirement-left-box{padding-bottom:15px!important;}
+	.retirement_calculator .calculator_right h2{width:91% !important;}
+}
+@media only screen and (max-width:360px){
+	.bdrLine{width:inherit; overflow:inherit;}
+	#slider_1, #slider_2, #slider_3, #slider_4{display:none;}
+	.bdrLine{width:inherit; overflow:inherit; display:none;}
+	.emi-calculator .calculator_left label.emi_highlight_txt{padding:6px 5px; text-align:center; width:43%; height:20px; display:block;}
+	.emi-calculator .calculator_left span.emi_highlight_head{font-size:19px; height:20px; padding:6px 5px; text-align:left; width:49%; display:block;}
+	.emi-calculator .pre_payment_calc label.emi_highlight_txt{font-size:13px;}
+	.emi-calculator .pre_payment_calc span.emi_highlight_head{font-size:15px; text-align:center;}
+	.loan_tenure_month{display:none;}
+	#slider_1_txt{margin:0;}
+	.calculator_heading{margin:0px 0 0 8px;}
+	.emi-calculator .calculator_left span.emi_highlight_head{float:right; width:49.8%; margin-bottom:10px;}
+	.emi-calculator .calculator_left label.emi_highlight_txt{width:43%;}
+	.menu_main .nav{width:100%;}
+	.w36-p{display:none;}
+	.retirement_calculator .calculator_right h4{text-align:left !important; width:100% !important; margin-bottom:5px;}
+	.retire-note{display:none;}
+	.retirement-left-box{padding-bottom:15px!important;}
+	.retirement_calculator .calculator_right h2{width:90% !important;}
+	span.emi_highlight_head{height:auto !important; padding:5px 0 !important; width:53.3% !important;}
+}
+
+@media only screen and (max-width:320px){
+	.emi-calculator .calculator_left label.emi_highlight_txt{width:8%;}
+	.emi-calculator .calculator_left span.emi_highlight_head{width:10%;}
+	.bdrLine{width:inherit; overflow:inherit;}
+	#slider_1, #slider_2, #slider_3, #slider_4{display:none;}
+	.bdrLine{width:inherit; overflow:inherit; display:none;}
+	.emi-calculator .calculator_left label.emi_highlight_txt{padding:6px 5px; text-align:center; width:43%; height:20px; display:block;}
+	.emi-calculator .calculator_left label.fd_highlight_txt{padding:6px 5px; text-align:center; width:43%; height:20px; display:block; font-size:14px;}
+	.emi-calculator .calculator_left span.emi_highlight_head{font-size:19px; height:20px; padding:6px 5px; text-align:left; width:49%; display:block;}
+	span.fd-calculator-span{font-size:15px !important;}
+	.loan_tenure_month{display:none;}
+	.calculator_right input#amount_lac, .calculator_right b, .calculator_right #amount_crore, .calculator_right #time_month, .calculator_right #time_year{display:none;}
+	.emi-calculator .pre_payment_calc label.emi_highlight_txt{width:53%; font-size:14px;}
+	.emi-calculator .pre_payment_calc span.emi_highlight_head{width:39%; font-size:15px; text-align:center;}
+	#slider_1_txt{margin:0;}
+	.calculator_heading{margin:0px 0 0 8px; font-size:18px;}
+	.left-container .skin span.main{height:40px;}
+	.bigbox .w200.main{width:85%;}
+	.menu_main .nav{width:100%;}
+	.rmm{width:98%;}
+	.emi-calculator .calculator_left span.emi_highlight_head{width:48.6%; margin-bottom:10px;}
+	.w36-p{display:none;}
+	.retirement_calculator .calculator_right h4{text-align:left !important; width:100% !important; margin-bottom:5px;}
+	.retirement_calculator label{width:48%;}
+	.retire-note{display:none;}
+	.retirement-left-box{padding-bottom:15px!important;}
+	.retirement_calculator .calculator_right h2{width:86% !important;}
+	span.emi_highlight_head{height:auto !important; padding:5px 0 !important; width:52.5% !important;}
+	
+}
+
+@media only screen and (max-width:240px){
+	#headerPart .logo{width:65%;}
+	#headerPart .logo a img{width:87%;}
+	.calculator_heading{font-size:16px;}
+	.emi-calculator .calculator_left span.emi_highlight_head{font-size:17px; width:46%;}
+	#footerPart{width:77%;}
+	.rmm{width:77%;}
+	.font12{font-size:11px;}
+	.rmm.graphite .rmm-toggled{float:left; margin-left:8px !important; width:86%;}
+	.emi-calculator .calculator_left label.emi_highlight_txt{width:42%;}
+}
+	input.qtyplus{background:url("../images/qty_sprite.png") no-repeat scroll right center; border:medium none; cursor:pointer; height:30px; margin:0px; width:30px;}
+	input.qtyminus{background:url("../images/qty_sprite.png") no-repeat scroll left center; border:medium none; cursor:pointer; height:30px; margin:0 -1px 0 0; padding:0; width:30px;}
+	.ml-5{margin-left:0px!important;}
+	
+table{width:100%; border-collapse:collapse;}
+table th, table td{padding:5px;}
+tr.result{background:#014667; color:#fff; font-size:18px;}
+tr.result small{font-size:14px;}
+.text-center{text-align:center;}
+.calculator_left table th, .calculator_left table td{padding:10px; border:1px solid #e5e5e5; border-width:1px 0;}
+.emi-calculator .form-group{clear:both; margin:15px 0;}
+.emi-calculator .form-group label, .emi-calculator .form-control-wrapper, .emi-calculator .icon-group{display:inline-block; vertical-align:middle;}
+.emi-calculator .form-group label{font-size:13px; font-weight:700;}
+.emi-calculator .radio label, .emi-calculator .checkbox label{cursor:pointer; line-height:normal; margin:0;}
+.emi-calculator .radio input, .emi-calculator .checkbox input{position:relative; top:2px; margin-right:3px;}
+.icon-group .icon, .icon-group input{float:left; display:block; height:30px;}
+.icon-group .icon{background:#e5e5e5; height:30px; padding:3px 10px; text-align:center; line-height:24px; font-size:13px;}
+.icon-left .icon, .icon-right input{border-radius:5px 0 0 5px;}
+.icon-left input, .icon-right .icon{border-radius:0 5px 5px 0;}
+.retirement_calculator .form-group:after{clear:both; content:''; display:table;}
+.retirement_calculator .form-group label{float:left; width:55%; line-height:30px;}
+.retirement_calculator .form-group .form-text{width:35%;}
+.retirement_calculator .form-group .icon-group{display:inline-table; float:left; width:35%;}
+.retirement_calculator .form-group .icon-group input{display:table-cell; width:30px;}
+.retirement_calculator .form-group .icon-group input.first{-moz-border-radius:5px 0 0 5px; -webkit-border-radius:5px 0 0 5px; border-radius:5px 0 0 5px;}
+.retirement_calculator .form-group .icon-group input.last{-moz-border-radius:0 5px 5px 0; -webkit-border-radius:0 5px 5px 0; border-radius:0 5px 5px 0;}
+.retirement_calculator .form-group .icon-group .form-text{width:76%;-moz-border-radius:0; -webkit-border-radius:0; border-radius:0; }
+.retirement_calculator .var-btns{width:35%; float:left; display:block; position:relative;}
+.retirement_calculator .var-btns input.first, .retirement_calculator .var-btns input.last{position: static;float: left;}
+.retirement_calculator .var-btns input.last{-moz-border-radius: 0 5px 5px 0; -webkit-border-radius: 0 5px 5px 0;border-radius: 0 5px 5px 0;float: left;}
+.retirement_calculator .var-btns .form-text{width: 78%;padding: 6px 40px;float: left;}
+.form-group label{padding-right:10px; font-size:16px; margin-right:10px; line-height:40px; color:#4b4b4b;}
+.form-group select, .form-group .text-box{padding:8px; height:39px; width:auto; color:#888; border:1px solid #ccc; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+
+.slider-amount{padding:35px 50px 25px 15px; width:100%;}
+.slider_box{min-height:64px;}
+.form-group{position:relative;}
+.form-group .slider_box{display:inline-block; vertical-align:top;}
+.form-group .slider-input.text-box{font-size:20px; color:#fc9210; text-align:center;}
+.hlbt-calc-form .form-elements .form-group label{width:45%;}
+.hlbt-calc-form .form-elements .form-group .radio label{width:auto; cursor:pointer; margin:0; font-size:13px; margin-right:15px;}
+.hlbt-calc-form .selected span{color:#4b4b4b;}
+.hlbt-calc-form .slider_box{min-height:inherit;}
+
+@media all and (max-width:992px){
+	.emi-calculator .calculator_left span.emi-calculator-span{font-size:16px;}
+}
+@media all and (max-width:768px){
+	.emi-calculator .calculator_left span.emi-calculator-span, tr.result{font-size:15px;}
+	.boxer:after{content:''; display:table; clear:both;}
+	.boxer .box-row{display:block; float:left; width:50%;}
+	.boxer .clo_name, .boxer .box{display:block; min-height:38px; margin-bottom:-1px;}
+}
+@media all and (max-width:640px){
+	.breadcrumbs, .slider-amount{display:none;}
+}
+@media all and (max-width:480px){
+	.retirement_calculator .form-group .form-text, .retirement_calculator .var-btns.emi-calculator .form-group label, .emi-calculator .form-control-wrapper, .emi-calculator .icon-group{float:none; width:100%;}
+	.retirement_calculator .form-group label{line-height:normal; margin:0 0 10px; padding:0;}
+	.emi-calculator .calculator_left span.emi-calculator-span, tr.result{font-size:14px;}
+	.glitter-price-calculator.emi-calculator .gold_price_dis span.gold_price_update{display:block; margin:10px 0 0; float:none;}
+}
+.calculator_left .table-alignment tr td{padding: 10px 0px 0px 0px;}

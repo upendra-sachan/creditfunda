@@ -1,0 +1,914 @@
+
+<script type="text/javascript" src="/components/javascript/jquery-1.8.3.min.js"></script>
+                      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+                    <html dir="ltr" lang="en" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/1999/xhtml http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd">
+                        <head>
+							<!---CODE FOR OPTIMIZELY--->
+							<!--<script src="//cdn.optimizely.com/js/6503320342.js"></script>-->
+							<!---CODE FOR OPTIMIZELY--->
+						
+							<!-- Google Analytics Content Experiment code -->
+														<script>
+								//TO PASS DYNAMIC URL IN JAVASCRIPT
+								var page_action_url = "404";
+							</script>                                                                
+                            <meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1123.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+                            <meta name="theme-color" content="#1C3C5D">
+                            <title></title>
+                            <link rel="manifest" href="/manifest.json">
+                            <meta name="keywords" content="" />
+                            <link rel="alternate" type="application/rss+xml" title=""/>
+                            <meta name="description" content="" />
+                            <link rel="alternate" href="android-app://com.paisabazaar/https/www.paisabazaar.com/404" />
+			    <!--                                <meta http-equiv="Cache-control" content="public">
+				<meta HTTP-EQUIV="Pragma" CONTENT="public" />
+				<meta HTTP-EQUIV="Cache-Control" CONTENT="public, max-age=604800, pre-check=604800" />
+				<meta HTTP-EQUIV="Expires" CONTENT="Sat, 11 May 19 14:20:58 +0530" />-->
+							
+			    
+							
+                                <link href="https://static.paisabazaar.com/components/images/favicon.ico" rel="apple-touch-icon-precomposed" type="image/gif"/>
+                            <!--[if (!IE)|(lt IE 9)]>
+                            	<link href="https://static.paisabazaar.com/components/images/favicon.ico" rel="shortcut icon" type="image/png"/>
+                            <![endif]-->
+                            <link href="https://static.paisabazaar.com/components/images/favicon.ico" rel="shortcut icon" type="image/gif" />        
+                            <meta content="text/javascript" http-equiv="Content-Script-Type" />        
+                            <meta content="text/css" http-equiv="Content-Style-Type" />
+                            <meta content="en_UK" http-equiv="Content-Language" />
+                            <meta name="MobileOptimized" content="240" />
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+                            <meta http-equiv="cleartype" content="on" />
+                            <meta content="Keep-Alive;Timeout=400" http-equiv="Connection" />
+                            <meta property="fb:pages" content="156759887826821" />
+                            <link rel='index' title='Temp' href='https://www.paisabazaar.com' />
+                            <link rel="canonical" href="https://www.paisabazaar.com/404/" />
+                            <base href="https://www.paisabazaar.com"/>
+                            <link rel='prev' title='https://www.paisabazaar.com/components/skins/images/grabbing.png' />
+                            <link rel='start' title='https://www.paisabazaar.com/components/skins/images/grabbing.png' />
+                                                        <link rel="stylesheet" type="text/css" href="https://static.paisabazaar.com/components/skins/pab.style.min.css?ver=127.18.453" media="all" />
+                            <link rel="stylesheet" type="text/css" href="https://static.paisabazaar.com/components/skins/style_main_v8.10.css?ver=127.18.453"  media="all" />
+                                                        
+                            <!--[if lte IE 9]>
+                            	<link rel="stylesheet" type="text/css" href="https://static.paisabazaar.com/components/skins/ie8-and-down-v5.css" media="all" />
+                            <![endif]-->
+                            		
+                            <link rel="stylesheet" type="text/css" href="https://static.paisabazaar.com/components/skins/common_pab.min.css?ver=127.18.453" media="all" />
+                            <script type="text/javascript" src="https://static.paisabazaar.com/components/javascript/respond.js?ver=127.18.453"></script>
+                            <script type="text/javascript">
+	                            var scrollId = 1907680;
+                            </script>
+							<script>
+								var run_ominture_track = true;
+								var heartBeatContinue = false;
+															</script>
+                                <script type="text/javascript" src="https://static.paisabazaar.com/components/javascript/optin_v6.js?ver=127.18.453"></script>
+                                <script type="text/javascript" src="https://static.paisabazaar.com/components/javascript/common.min_v6.6.js?ver=127.18.453"></script>
+                                <script type="text/javascript" src="https://static.paisabazaar.com/components/javascript/pab.common_v2.6.js?ver=127.18.453"></script>
+                                <script type="text/javascript" src="https://static.paisabazaar.com/components/javascript/jquery.feedbackbox_v1.4.js"></script>
+                                <!--<script type="text/javascript" src="//ads.revenuemantra.com/static/js/dmp.js"></script>-->
+                                <script src="//assets.adobedtm.com/51a3afe8934c9a2bf0812bf073062bb8b9708760/satelliteLib-18d600777c8a7687f0cfa82e7cb3a0ac0fe93007.js"></script>
+                                                                <!-- Google Tag Manager -->
+                                <script>(function(w, d, s, l, i) {
+                                                    w[l] = w[l] || [];
+                                                    w[l].push({'gtm.start':
+                                                                new Date().getTime(), event: 'gtm.js'});
+                                                    var f = d.getElementsByTagName(s)[0],
+                                                            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                                                    j.async = true;
+                                                    j.src =
+                                                            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+                                                    f.parentNode.insertBefore(j, f);
+                                                })(window, document, 'script', 'dataLayer', 'GTM-JGPT');</script>
+                                <!-- End Google Tag Manager -->
+                                <!-- Google Analytics -->
+                                <script>
+                                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                                ga('create', 'UA-34155195-1', 'auto', {'name':'paTrackerObj'});
+                                ga('send', 'pageview');
+                                </script>
+                                <!-- End Google Analytics -->                               
+                                
+                                
+<script>
+    var customer_ID = '';
+    var clevertab_account_id = "W8W-498-894Z";
+    var digitalData = {
+    page : {
+    'pageName': '404',
+            'channel': '404',
+            'bureauCJ': 'true',
+            'subSection1':'Home',
+            'subSection2':'404',
+            'subSection3':'',
+            'subSection4':'',
+            'subSection5':'',
+            'subSection6':'',
+            'customerId': '',
+            'leadidId': '',
+            'isagent':'1',
+            'userType':'guest',
+            'planname':'',
+            'selectedPlan':'',
+            'filterApplied':'',
+            'utm_source':'',
+            'utm_medium':'',
+            'utm_campaign':'',
+            'utm_term':'CC_BU_Page',
+            'utm_title':'',
+            'utm_content':'',
+    }
+    }
+        _satellite.track('404');
+                var _vwo_code = (function(){
+            var account_id = 233450,
+                    settings_tolerance = 5000,
+                    library_tolerance = 5000,
+                    use_existing_jquery = false,
+// DO NOT EDIT BELOW THIS LINE
+                    f = false, d = document; return{use_existing_jquery:function(){return use_existing_jquery; }, library_tolerance:function(){return library_tolerance; }, finish:function(){if (!f){f = true; var a = d.getElementById('_vis_opt_path_hides'); if (a)a.parentNode.removeChild(a); }}, finished:function(){return f; }, load:function(a){var b = d.createElement('script'); b.src = a; b.type = 'text/javascript'; b.innerText; b.onerror = function(){_vwo_code.finish(); }; d.getElementsByTagName('head')[0].appendChild(b); }, init:function(){settings_timer = setTimeout('_vwo_code.finish()', settings_tolerance); var a = d.createElement('style'), b = 'body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}', h = d.getElementsByTagName('head')[0]; a.setAttribute('id', '_vis_opt_path_hides'); a.setAttribute('type', 'text/css'); if (a.styleSheet)a.styleSheet.cssText = b; else a.appendChild(d.createTextNode(b)); h.appendChild(a); this.load('//dev.visualwebsiteoptimizer.com/j.php?a=' + account_id + '&u=' + encodeURIComponent(d.URL) + '&r=' + Math.random()); return settings_timer; }}; }()); _vwo_settings_timer = _vwo_code.init();</script>
+
+								<script type="text/javascript">
+    function fireGALoadEvent(){
+        setTimeout( function(){
+            try{
+                ga('paTrackerObj.send', 'event', 'pop up', 'load', 'www.paisabazaar.com//components/skins/images/grabbing.png');
+            }catch(Exception){}
+        }, 1000 ); 
+    }
+
+    function fireGAClickEvent(){
+        setTimeout( function(){
+            try{
+                ga('paTrackerObj.send', 'event', 'pop up', 'click', 'www.paisabazaar.com//components/skins/images/grabbing.png');
+            }catch(Exception){}
+        }, 1000 ); 
+    }
+</script>
+                        </head>
+                        <body lang="en" dir="ltr">
+                            <!-- Google Tag Manager (noscript) -->
+                            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-JGPT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+                            <!-- End Google Tag Manager (noscript) -->
+                            	
+                                                                                            <header>
+                                        <div id="headerContent">
+                                            <style>  
+ul li.hasL2 { 
+    display: inline-block !important;
+    width: 100% !important;
+}
+dl.l2{margin-bottom: 0;}
+ul li.hasL2 dt> a:hover{background: #777 !important; }
+ul li.hasL2 dt> a:before {content: "\00BB" !important; position: relative !important; left:-10px !important; font-size: 16px !important;}
+ul li.hasL2 dt > a {font-weight:400 !important; padding: 2px 20px 2px 30px !important; }
+#cssmenu ul ul, #loginTfn ul ul { z-index: 9999;}
+
+@media screen and (max-width:650px){
+   ul li.hasL2 dt > a{margin-left: 12px !important;} 
+}
+</style>
+        <div id="logo" itemscope="" itemtype="http://schema.org/Organization"><a itemprop="url" itemprop="logo" href="/"></a></div>
+<div id="loginTfn">
+    <ul>
+                <li >
+            <div class="app-color">DOWNLOAD APP</div>
+            <div class="app-icon">
+                <a href="javascript:void(0);" onClick="saveClickRecord('https://goo.gl/QSZWbZ', 'PAB', 'Mobile-App-iOS', 'k3g', 'koCpbn55mQ')"><img class="float-left apple" src="https://static.paisabazaar.com/components/images/app-store.png"/></a>
+                <a href="javascript:void(0);" onClick="saveClickRecord('https://goo.gl/ullELZ', 'PAB', 'Mobile-App-Android', 'k3g', 'koCpbn55mQ')"><img class="float-left android" src="https://static.paisabazaar.com/components/images/google-play.png"/></a>
+            </div>
+        </li>
+        <li class="loginOrange ">
+                <div class="userlogin">
+                    <div id="user_name_span" class="welcome_login">			
+                        <a href="https://creditreport.paisabazaar.com/bureau/login">Sign In</a>                    </div>
+                    <ul class="dropDown2 hide" id="my_account_dropdown" >
+                                                <li><a href="https://myaccount.paisabazaar.com/my-account/customer-profile/">My Profile</a></li>
+                                                <li><a href="https://myaccount.paisabazaar.com/my-account/get-credit-report/">Credit Report</a></li>
+                                                <li><a href="https://myaccount.paisabazaar.com/my-account/feedback-form/">Feedback</a></li>
+                                                <li><a href="https://myaccount.paisabazaar.com/my-account/feedback-listing/">Feedback Listing</a></li>
+                                                <li><a href="https://myaccount.paisabazaar.com/my-account/logout-myaccount/">Logout</a></li>
+                                            </ul>
+                </div>
+        </li>
+                <li class="toll-number">
+            <div class="number">1800 208 8877</div>
+            <div class="toll-free">[ 9am - 9pm ]</div>
+            <div class="whatsapp-call wahtsapp-icon"><span></span> +91 - 8510093333</div>
+        </li>
+    </ul>
+</div>
+   
+<div class="award-img">
+<!--<img src="/components/images/tag.gif" class="float-left mt-3">
+<img height="85px" src="/components/images/home_page/merry_xmas.gif" class="float-left mt-3">-->
+<!--<img class="float-left mt-3" src="https://static.paisabazaar.com/components/images/tag.gif"/>-->
+</div>
+<!--<span class="call-me"><a href=""><img src="/components/images/home-call-icon.png" class="" alt="Call Paisabazaar"></a></span> -->
+<div id='cssmenu' >                    
+    <ul>
+        <li><a href="/credit-card/" >Credit Cards</a></li><li><a href="/personal-loan/" >Personal Loan</a></li><li><span class='submenu-button'></span><a href="javascript:void(0)" >Other Loans</a><ul class="dropDown"><li><a href="/home-loan-balance-transfer/">Home Loan Balance Transfer</a></li><li><a href="/home-loan/">Home Loan</a></li><li><a href="/loan-against-property/">Loan Against Property</a></li><li><a href="/business-loan/">Business Loan</a></li><li><a href="/car-loan/">Car Loan</a></li><li><a href="/education-loan/">Education Loan</a></li><li><a href="/gold-loan/">Gold Loan</a></li></ul></li><li><span class='submenu-button'></span><a href="javascript:void(0)" >Investment</a><ul class="dropDown"><li><a href="/savings-account/">Savings Account</a></li><li><a href="/fixed-deposit/">Fixed Deposit</a></li><li><a href="/wallet/">Wallet</a></li><li><a href="/mutual-funds/">Mutual Fund</a></li><li><a href="/digital-gold/">Digital Gold</a></li></ul></li><li><span class='submenu-button'></span><a href="javascript:void(0)" >Resources</a><ul class="dropDown"><li><a href="/financial-tools-calculators/">Financial Calculators</a></li><li><a href="/emi-calculator/">EMI Calculator</a></li><li><a href="/home-loan-balance-transfer-advanced/?utm_source=hlbt_calculator">Balance Transfer Calculator</a></li><li><a href="/sip-calculator/">SIP Calculator</a></li><li><a href="/ifsc-code/">IFSC Code</a></li><li><a href="/tax/income-tax-return/">Income Tax Return </a></li><li><a href="/tax/gst-calculation-tool/">GST Calculator</a></li><li><a href="/fd-fixed-deposit-calculator/">FD Calculator</a></li></ul></li><li><span class='submenu-button'></span><a href="/javascript:void(0);" >Learn</a><ul class="dropDown"><li class="hasL2" style="height:auto"><a href="javascript:void(0)">All About</a><dl class="l2"><dt><a  href="https://www.paisabazaar.com/aadhar-card/">Aadhaar Card</a></dt><dt><a  href="https://www.paisabazaar.com/pan-card/">PAN Card</a></dt><dt><a  href="https://www.paisabazaar.com/saving-schemes/national-pension-system/">NPS</a></dt><dt><a  href="https://www.paisabazaar.com/saving-schemes/ppf/">PPF</a></dt><dt><a  href="https://www.paisabazaar.com/saving-schemes/epf/">EPF</a></dt></dl><li><a href="/faqs/">FAQs</a></li><li><a href="/banking/">Banking</a></li><li><a href="/credit-score/">Credit Score</a></li><li><a href="/cibil-credit-report/?utm_content=menu">Credit and CIBIL Report </a></li></ul></li><li><a href="/support" >Support</a></li>    </ul> 
+    </div>   
+
+                                            
+                                            <div class="clear"></div>
+																								
+
+											
+											
+                                        </div>
+										
+										
+										
+                                        <noscript><p class="no-script-class">Please enable javascript on your browser or update your browser with latest version!</p></noscript>
+                                    </header>
+                                    <!--<div id="loading" class="display-none">
+                                        <div id="loading-span">Please wait while page is loading...</div><img src="https://static.paisabazaar.com/components/images/web_loader.gif" alt="loading...">
+                                    </div>-->
+                                    <!--OVERLAY FOR NON PARTNERS-->
+                                    <!--<div id="overlay_message" class="display-none" class="message-overlay">
+                                <div id="overlay_message-span" class="overlayClass"></div><div class="clear"></div><img class="proceed-btn" src="https://static.paisabazaar.com/components/images/click-green.png" alt="loading..." onclick="closeOverlay()"/>
+                            </div>-->
+
+                                    <!--<div class="outerSection bdrTopBottm">                
+                                            <div class="row_main pTopBottom" id="headerPart">
+                                                <header class="container">
+                            
+                                                    <div class="hRightPart animated bounceInDown">
+                                                                                                                                </div>
+                                                </header>
+                                                                                            </div>-->
+                                    <!--Navigation Part Starts Here-->
+                                    
+                                        <!--<div id='cssmenu'><ul>
+                                                                                 </ul>
+                                     </div>-->
+
+                                        <!--Navigation Part Ends Here-->
+                                        
+                                <div id="loading" class="display-none">
+                                    <div id="loading-span">Please wait while page is loading...</div><img src="https://static.paisabazaar.com/components/images/web_loader.gif" alt="loading...">
+                                </div>
+								<div class="display-none" id="pan_loading">
+									<div id="loading-span">Please wait while PAN card is getting verified...</div><img alt="loading..." src="https://static.paisabazaar.com/components/images/web_loader.gif">
+								</div>
+                                <!--OVERLAY FOR NON PARTNERS-->
+                                <div id="overlay_message" class="display-none" class="message-overlay">
+                                    <div id="overlay_message-span" class="overlayClass"></div><div class="clear"></div><img class="proceed-btn" src="https://static.paisabazaar.com/components/images/click-green.png" alt="loading..." onClick="closeOverlay()"/>
+                                </div>
+                                <div id="">                                
+	<div class="min-wrapper"> 
+	<table width="100%" style="margin:0 auto" border="0" align="center" cellspacing="0" cellpadding="0" class="maincontent">
+		<tbody>
+			<tr>
+				<td style="margin-top:10px;">&nbsp;</td>
+			</tr>
+			<tr>
+				<td align="center" class="vat">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tbody>
+							<tr>
+								<td style="line-height:40px;" colspan="2">&nbsp;</td>
+							</tr>
+							<tr>
+								<td style="vertical-align:top" rowspan="2"><img alt="" src="https://static.paisabazaar.com/components/images/404Lens.jpg"></td>
+								<td style="font-size:12px;">
+									<span style="color:#BCBCBC;font-size:36px;">File Not Found</span>
+									<br><br><br>           
+									Try returning to the <a href="/" style="color:#D30B0D;">home page</a> and finding the page<br>
+									your were looking for or use the navigations to<br>
+									find your page.<br><br><br>
+									<span style="color:#0078B1;font-size:18px;">Sorry for the inconvenience.</span><br><br>           
+								</td>
+							</tr>
+							<tr>
+								<td align="right"><img alt="" src="https://static.paisabazaar.com/components/images/404Pin.jpg"></td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<td valign="top" style="padding-right:4px;">
+				<div style="display:none;" id="ctl00_ctl00_dvShowMobileBanner">
+					<a href="https://m.paisabazaar.com"><img border="0" title="mobileweb site" src="https://static.paisabazaar.com/components/images/mobilewebsite.gif"></a><br><br>
+					</div>
+							   
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" style="padding-left:10px;padding-bottom:5px;padding-top:10px;padding-right:10px; text-align:justify;" colspan="1">
+							   
+				</td>
+			</tr>
+		</tbody>
+	</table></div></div>
+</div>
+        <!--footer Part Ends Here-->
+                <div id="footer-mobile">
+            <div class="col">
+                <ul>
+                    <li><a href="/about-us/" title="About Us">About Us </a></li> 
+                    <li><a href="/contact-us/" title="Contact Us">Contact Us</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+                            <div id="footer-new" style='display:'>
+                 <div class="footer-container light-theme">
+    <div class="most-searched">
+        <div class="f-container">
+            <h6>Most Searched</h6>
+            <div class="tabs-row block-all">
+                <ul class="tabs">
+                    <li rel="tab1">Financial Tools <i></i></li>
+                    <li rel="tab2">CIBIL<i></i></li>
+                    <li rel="tab3">Credit Cards<i></i></li>
+                    <li rel="tab4">Personal Loan<i></i></li>
+                    <li rel="tab5">Business Loan<i></i></li>
+                </ul>
+                <div class="tab_container">
+                    <h3 class="tab_drawer_heading" rel="tab1">Financial Tools<i></i></h3>
+                    <div id="tab1" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/emi-calculator/">EMI Calculator</a></li>
+                            <li><a target="_blank" href="/personal-loan-emi-calculator/">Personal Loan EMI Calculator</a></li>
+                            <li><a target="_blank" href="/home-loan-emi-calculator/">Home Loan EMI Calculator</a></li>
+                            <li><a target="_blank" href="/business-loan/emi-calculator/">Business Loan EMI Calculator</a></li>
+                            <li><a target="_blank" href="/loan-against-property-emi-calculator/">Loan Against Property EMI Calculator</a></li>
+                            <li><a target="_blank" href="/education-loan-emi-calculator/">Education Loan EMI Calculator</a></li>
+                            <li><a target="_blank" href="/car-loan-emi-calculator/">Car Loan EMI Calculator</a></li>
+                            <li><a target="_blank" href="/compound-interest-calculator/">Compound Interest Calculator</a></li>
+                            <li><a target="_blank" href="/gold-loan-emi-calculator/">Gold Loan EMI Calculator</a></li>
+                            <li><a target="_blank" href="/fd-fixed-deposit-calculator/">FD Calculator</a></li>
+                            <li><a target="_blank" href="/rd-recurring-deposit-calculator/">RD Calculator</a></li>
+                            <li><a target="_blank" href="/sip-calculator/">SIP Calculator</a></li>
+                            <li><a target="_blank" href="/tax/gst-calculation-tool/">GST Calculator</a></li>
+                            <li><a target="_blank" href="/tax/gst-rates-hsn-code/">GST Rate Finder</a></li>
+                            <li><a target="_blank" href="/retirement-planning-calculator/">Retirement Planning Calculator</a></li>
+                            <li><a target="_blank" href="/saving-schemes/ppf-calculator/">PPF Calculator</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="tab_drawer_heading" rel="tab2">CIBIL<i></i></h3>
+                    <div id="tab2" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/cibil/">CIBIL</a></li>
+                            <li><a target="_blank" href="/cibil-credit-report/">CIBIL Report</a></li>
+                            <li><a target="_blank" href="/credit-score/">Credit Score</a></li>
+                            <li><a target="_blank" href="/cibil-score/">CIBIL Score</a></li>
+                            <li><a target="_blank" href="/credit-score/how-to-check-cibil-score/">How to Check CIBIL Score</a></li>
+                            <li><a target="_blank" href="/credit-score/cibil-score-calculation/">CIBIL Score Calculation</a></li>
+                            <li><a target="_blank" href="/cibil/how-to-check-cibil-score-by-pan-card/">Check CIBIL Score by PAN</a></li>
+                            <li><a target="_blank" href="/credit-score/cibil-score-for-personal-loan/">CIBIL Score for Personal Loan</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="tab_drawer_heading" rel="tab3">Credit Cards<i></i></h3>
+                    <div id="tab3" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/credit-card/">Credit Card</a></li>
+                            <li><a target="_blank" href="/sbi-bank/credit-card/">SBI Credit Card</a></li>
+                            <li><a target="_blank" href="/bajaj-finserv-nbfc/credit-card/">Bajaj Finserv Credit Card</a></li>
+                            <li><a target="_blank" href="/hdfc-bank/credit-card/">HDFC Credit Card</a></li>
+                            <li><a target="_blank" href="/canara-bank/credit-card/">Canara Bank Credit Card</a></li>
+                            <li><a target="_blank" href="/bank-of-baroda/credit-card/">Bank Of Baroda Credit Card</a></li>
+                            <li><a target="_blank" href="/axis-bank/credit-card/">Axis Bank Credit Card</a></li>
+                            <li><a target="_blank" href="/indusind-bank/credit-card/">Indusind Credit Card</a></li>
+                            <li><a target="_blank" href="/punjab-national-bank/credit-card/">PNB Credit Card</a></li>
+                            <li><a target="_blank" href="/rbl-bank/credit-card/">RBL Credit Card</a></li>
+                            <li><a target="_blank" href="/icici-bank/credit-card/">ICICI Credit Card</a></li>
+                            <li><a target="_blank" href="/indian-bank/credit-card/">Indian Bank Credit Card</a></li>
+                            <li><a target="_blank" href="/amex-bank/credit-card/">Amex Credit Card</a></li>
+                            <li><a target="_blank" href="/credit-card/kisan-credit-card-loan/">Kisan Credit Card</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="tab_drawer_heading" rel="tab4">Personal Loan<i></i></h3>
+                    <div id="tab4" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/personal-loan/">Personal Loan</a></li>
+                            <li><a target="_blank" href="/personal-loan/interest-rates/">Personal Loan Interest Rates</a></li>
+                            <li><a target="_blank" href="/personal-loan/eligibility-calculator/">Personal Loan Eligibility</a></li>
+                            <li><a target="_blank" href="/sbi-bank/personal-loan/">SBI Personal Loan</a></li>
+                            <li><a target="_blank" href="/bajaj-finserv/personal-loan/">Bajaj Finance Personal Loan</a></li>
+                            <li><a target="_blank" href="/indiabulls/personal-loan/">Indiabulls Personal Loan</a></li>
+                            <li><a target="_blank" href="/axis-bank/personal-loan/">Axis Bank Personal Loan</a></li>
+                            <li><a target="_blank" href="/shriram-housing-finance/personal-loan/">Shriram Finance Personal Loan</a></li>
+                            <li><a target="_blank" href="/hdfc-bank/personal-loan/">HDFC Personal Loan</a></li>
+                            <li><a target="_blank" href="/personal-loan/personal-loan-balance-transfer/">Personal Loan Balance Transfer</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="tab_drawer_heading" rel="tab5">Business Loan<i></i></h3>
+                    <div id="tab5" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/business-loan/">Business Loan</a></li>
+                            <li><a target="_blank" href="/business-loan/mudra-loan/">Mudra Loan</a></li>
+                            <li><a target="_blank" href="/business-loan/overdraft-account/">Overdraft</a></li>
+                            <li><a target="_blank" href="/business-loan/msme-loan/">MSME Loan</a></li>
+                            <li><a target="_blank" href="/business-loan/cgtmse-scheme/">CGTMSE Scheme</a></li>
+                            <li><a target="_blank" href="/business-loan/interest-rates/">Business Loan Interest Rates</a></li>
+                            <li><a target="_blank" href="/business-loan/mudra-loan-interest-rates/">Mudra Loan Interest Rates</a></li>
+                            <li><a target="_blank" href="/hdfc-bank/business-loan/">HDFC Business Loan</a></li>
+                            <li><a target="_blank" href="/axis-bank/business-loan/">Axis Bank Business Loan</a></li>
+                            <li><a target="_blank" href="/icici-bank/business-loan/">ICICI Bank Business Loan</a></li>
+                            <li><a target="_blank" href="/sbi-bank/business-loan/">SBI Business Loan</a></li>
+                            <li><a target="_blank" href="/bajaj-finserv/business-loan/">Bajaj Finance Business Loan</a></li>
+                            <li><a target="_blank" href="/sbi-bank/mudra-loan/">SBI Mudra Loan</a></li>
+                            <li><a target="_blank" href="/sidbi-bank/">SIDBI</a></li>
+                        </ul>
+                    </div><!-- #tab5 -->
+                </div><!-- .tab_container -->
+            </div><!-- .tabs-row -->
+
+            <div class="tabs-row">
+                <ul class="tabs">
+                    <li rel="tab6">Home Loan<i></i></li>
+                    <li rel="tab7">Loan Against Property<i></i></li>
+                    <li rel="tab8">Gold Loan<i></i></li>
+                    <li rel="tab9">Car Loan<i></i></li>
+                    <li rel="tab10">Education Loan<i></i></li>
+                </ul>
+                <div class="tab_container">
+                    <h3 class="tab_drawer_heading" rel="tab6">Home Loan<i></i></h3>
+                    <div id="tab6" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/home-loan/">Home Loan</a></li>
+                            <li><a target="_blank" href="/home-loan/interest-rates/">Home Loan Interest Rates</a></li>
+                            <li><a target="_blank" href="/home-loan/documents-required/">Documents Required for Home Loan</a></li>
+                            <li><a target="_blank" href="/sbi-bank/home-loan/">SBI Home Loan</a></li>
+                            <li><a target="_blank" href="/lic-housing-finance/home-loan/">LIC Home Loan</a></li>
+                            <li><a target="_blank" href="/hdfc-bank/home-loan/">HDFC Home Loan</a></li>
+                            <li><a target="_blank" href="/dhfl/home-loan/">DHFL Home Loan</a></li>
+                            <li><a target="_blank" href="/punjab-national-bank/home-loan/">PNB Home Loan</a></li>
+                            <li><a target="_blank" href="/indiabulls/home-loan/">Indiabulls Home Loan</a></li>
+                            <li><a target="_blank" href="/icici-bank/home-loan/">ICICI Home Loan</a></li>
+                            <li><a target="_blank" href="/pnb-housing/home-loan/">PNB Housing Loan</a></li>
+                            <li><a target="_blank" href="/yes-bank/home-loan/">Yes Bank Home Loan</a></li>
+                            <li><a target="_blank" href="/idfc-bank/home-loan/">IDFC Home Loan</a></li>
+                            <li><a target="_blank" href="/kotak-mahindra-bank/home-loan/">Kotak Mahindra Bank Home Loan</a></li>
+                            <li><a target="_blank" href="/bank-of-baroda/home-loan/">BOB Home Loan</a></li>
+                            <li><a target="_blank" href="/axis-bank/home-loan/">Axis Home Loan</a></li>
+                            <li><a target="_blank" href="/karnataka-bank/home-loan/">Karnataka Bank Home Loan</a></li>
+                            <li><a target="_blank" href="/home-loan/eligibility-calculator/">Home Loan Eligibility</a></li>
+                            <li><a target="_blank" href="/home-loan-balance-transfer/">Home Loan Balance Transfer</a></li>
+                            <li><a target="_blank" href="/home-loan/apply-online/">Apply Home Loan Online</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="tab_drawer_heading" rel="tab7">Loan Against Property<i></i></h3>
+                    <div id="tab7" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/loan-against-property/">Mortgage Loan</a></li>
+                            <li><a target="_blank" href="/loan-against-property/documents-required/">loan against property documents required</a></li>
+                            <li><a target="_blank" href="/loan-against-property/interest-rates/">Loan Against Property Interest Rates</a></li>
+                            <li><a target="_blank" href="/sbi-bank/loan-against-property/">SBI loan against property</a></li>
+                            <li><a target="_blank" href="/lic-housing-finance/loan-against-property/">LIC loan against property</a></li>
+                            <li><a target="_blank" href="/hdfc-bank/loan-against-property/">HDFC Loan Against Property</a></li>
+                            <li><a target="_blank" href="/loan-against-property/eligibility-calculator/">Loan Against Property Eligibility</a></li>
+                            <li><a target="_blank" href="/icici-bank/loan-against-property/">ICICI Loan Against Property</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="tab_drawer_heading" rel="tab8">Gold Loan<i></i></h3>
+                    <div id="tab8" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/gold-loan/">Gold Loan</a></li>
+                            <li><a target="_blank" href="/gold-loan/interest-rates/">Gold Loan Interest Rates</a></li>
+                            <li><a target="_blank" href="/sbi-bank/gold-loan/">SBI Gold Loan</a></li>
+                            <li><a target="_blank" href="/manappuram-finance-nbfc/gold-loan/">Manappuram Gold Loan</a></li>
+                            <li><a target="_blank" href="/muthoot-finance-nbfc/gold-loan/">Muthoot Gold Loan</a></li>
+                            <li><a target="_blank" href="/hdfc-bank/gold-loan/">HDFC Gold Loan</a></li>
+                            <li><a target="_blank" href="/icici-bank/gold-loan/">ICICI Gold Loan</a></li>
+                            <li><a target="_blank" href="/axis-bank/gold-loan/">Axis Bank Gold Loan</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="tab_drawer_heading" rel="tab9">Car Loan<i></i></h3>
+                    <div id="tab9" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/car-loan/">Car Loan</a></li>
+                            <li><a target="_blank" href="/car-loan/interest-rates/">Car Loan Interest Rates</a></li>
+                            <li><a target="_blank" href="/car-loan/documents-required/">Car Loan Documents Required</a></li>
+                            <li><a target="_blank" href="/sbi-bank/car-loan/">SBI Car Loan</a></li>
+                            <li><a target="_blank" href="/hdfc-bank/car-loan/">HDFC Bank Car Loan</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="tab_drawer_heading" rel="tab10">Education Loan<i></i></h3>
+                    <div id="tab10" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/education-loan/">Education Loan</a></li>
+                            <li><a target="_blank" href="/education-loan/interest-rates/">Education Loan Interest Rates</a></li>
+                            <li><a target="_blank" href="/education-loan/documents-required/">Education Loan Documents Required</a></li>
+                            <li><a target="_blank" href="/sbi-bank/education-loan/">SBI Education Loan</a></li>
+                            <li><a target="_blank" href="/indian-bank/education-loan/">Indian Bank Education Loan</a></li>
+                            <li><a target="_blank" href="Bank of India Education Loan">Bank of India Education Loan</a></li>
+                            <li><a target="_blank" href="/hdfc-bank/education-loan/">HDFC Education Loan</a></li>
+                            <li><a target="_blank" href="/canara-bank/education-loan/">Canara Bank Education Loan</a></li>
+                            <li><a target="_blank" href="/bank-of-baroda/education-loan/">Bank of Baroda Education Loan</a></li>
+                        </ul>
+                    </div>
+                </div><!-- .tab_container -->
+            </div><!-- .tabs-row -->
+
+            <div class="tabs-row">
+                <ul class="tabs">
+                    <li rel="tab11">Mutual Funds<i></i></li>
+                    <li rel="tab12">Insurance<i></i></li>
+                    <li rel="tab13">Savings Account<i></i></li>
+                    <li rel="tab14">Fixed Deposit<i></i></li>
+                    <li rel="tab15">IFSC<i></i></li>
+                </ul>
+                <div class="tab_container">
+                    <h3 class="tab_drawer_heading" rel="tab11">Mutual Funds<i></i></h3>
+                    <div id="tab11" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/mutual-funds/">Mutual Funds</a></li>
+                            <li><a target="_blank" href="/mutual-funds/sip/">SIP</a></li>
+                            <li><a target="_blank" href="/mutual-funds/ekyc/">EKYC for Mutual Fund</a></li>
+                            <li><a target="_blank" href="/mutual-funds/best-elss-funds-for-saving-tax/">ELSS Mutual Funds</a></li>
+                            <li><a target="_blank" href="/mutual-funds/sbi-mutual-fund/">SBI Mutual Fund</a></li>
+                            <li><a target="_blank" href="/mutual-funds/tax-benefit-of-mutual-fund/">Mutual Funds Taxation</a></li>
+                            <li><a target="_blank" href="/mutual-funds/systematic-withdrawal-plan-swp/">Systematic Withdrawal Plan</a></li>
+                            <li><a target="_blank" href="/mutual-funds/hybrid-funds/">Hybrid Funds</a></li>
+                            <li><a target="_blank" href="/mutual-funds/open-ended-funds/">Open Ended Funds</a></li>
+                            <li><a target="_blank" href="/mutual-funds/index-funds/">Index Funds</a></li>
+                            <li><a target="_blank" href="/mutual-funds/equity-funds/">Equity Fund</a></li>
+                            <li><a target="_blank" href="/mutual-funds/closed-end-funds/">Closed End Funds</a></li>
+                            <li><a target="_blank" href="/mutual-funds/liquid-funds/">Liquid Funds</a></li>
+                            <li><a target="_blank" href="/mutual-funds/new-fund-offers-nfo/">NFO List</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="tab_drawer_heading" rel="tab12">Insurance<i></i></h3>
+                    <div id="tab12" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/health-insurance/">Health Insurance</a></li>
+                            <li><a target="_blank" href="/insurance-companies/lic-of-india/">LIC Of India</a></li>
+                            <li><a target="_blank" href="/life-insurance/">Life Insurance</a></li>
+                            <li><a target="_blank" href="/motor-insurance/car-insurance/">Car Insurance</a></li>
+                            <li><a target="_blank" href="/insurance-companies/lic-of-india/lic-online-premium-payment/">LIC Premium Payment</a></li>
+                            <li><a target="_blank" href="/insurance-companies/star-health-insurance/">Star Health Insurance</a></li>
+                            <li><a target="_blank" href="/motor-insurance/two-wheeler-insurance/">Two Wheeler Insurance</a></li>
+                            <li><a target="_blank" href="/insurance-companies/religare-health-insurance-plans/">Religare Health Insurance</a></li>
+                            <li><a target="_blank" href="/life-insurance/term-insurance/">Term Insurance</a></li>
+                            <li><a target="_blank" href="/insurance-companies/hdfc-life-insurance/">HDFC Life Insurance</a></li>
+                            <li><a target="_blank" href="/insurance-companies/lic-life-insurance-plans/lic-term-insurance-premium-calculator/">LIC Premium Calculator</a></li>
+                            <li><a target="_blank" href="/travel-insurance/">Travel Insurance</a></li>
+                            <li><a target="_blank" href="/rural-insurance/crop-insurance/">Crop Insurance</a></li>
+                            <li><a target="_blank" href="/insurance-companies/bajaj-allianz-car-insurance/">Bajaj Allianz Car Insurance</a></li>
+                            <li><a target="_blank" href="/life-insurance/policy-senior-citizens/">Pension Plans</a></li>
+                            <li><a target="_blank" href="/life-insurance/ulip-plans/">ULIP Plans</a></li>
+                            <li><a target="_blank" href="/insurance-companies/postal-life-insurance/postal-life-insurance-premium-calculator/">PLI Calculator</a></li>
+                            <li><a target="_blank" href="/life-insurance/child-plans/">Child Insurance Plan</a></li>
+                            <li><a target="_blank" href="/life-insurance/whole-life-insurance/">Whole Life Insurance</a></li>
+                            <li><a target="_blank" href="/commercial-insurance/">Commercial Insurance</a></li>
+                            <li><a target="_blank" href="/rural-insurance/">Rural Insurance</a></li>
+                            <li><a target="_blank" href="/commercial-insurance/mobile-insurance/">Mobile Insurance</a></li>
+                            <li><a target="_blank" href="/insurance-companies/">List of Insurance Companies</a></li>
+                            <li><a target="_blank" href="/insurance-companies/postal-life-insurance/post-office-child-plans/">Post Office Child Plans</a></li>
+                            <li><a target="_blank" href="/motor-insurance/commercial-vehicle-insurance/">Commercial Vehicle Insurance</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="tab_drawer_heading" rel="tab13">Savings Account<i></i></h3>
+                    <div id="tab13" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/savings-account/">Savings Account</a></li>
+                            <li><a target="_blank" href="/axis-bank/savings-account/">Axis Bank Savings Account</a></li>
+                            <li><a target="_blank" href="/bank-of-india/savings-account/">Bank Of India Savings Account</a></li>
+                            <li><a target="_blank" href="/kotak-mahindra-bank/savings-account/">Kotak Mahindra Bank Savings Account</a></li>
+                            <li><a target="_blank" href="/bank-of-baroda/savings-account/">Bank Of Baroda Savings Account</a></li>
+                            <li><a target="_blank" href="/sbi-bank/savings-account/">SBI Savings Account</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="tab_drawer_heading" rel="tab14">Fixed Deposit<i></i></h3>
+                    <div id="tab14" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/fixed-deposit/">Fixed Deposit</a></li>
+                            <li><a target="_blank" href="/fixed-deposit/senior-citizen-fixed-deposit/">Senior Citizen Fixed Deposit Rates</a></li>
+                            <li><a target="_blank" href="/fixed-deposit/post-office-fixed-deposit-rates/">Post office Fixed Deposit Rates</a></li>
+                            <li><a target="_blank" href="/sbi-bank/fixed-deposits/">SBI Fixed Deposit Rates</a></li>
+                            <li><a target="_blank" href="/hdfc-bank/fixed-deposits/">HDFC Fixed Deposit Rates</a></li>
+                            <li><a target="_blank" href="/axis-bank/fixed-deposits/">Axis Bank Fixed Deposit Rates</a></li>
+                            <li><a target="_blank" href="/kotak-mahindra-bank/fixed-deposits/">Kotak Fixed Deposit Rates</a></li>
+                            <li><a target="_blank" href="/punjab-national-bank/fixed-deposits/">PNB Fixed Deposit Rates</a></li>
+                            <li><a target="_blank" href="/canara-bank/fixed-deposits/">Canara Fixed Deposit Rates</a></li>
+                            <li><a target="_blank" href="/fixed-deposit/interest-rates-of-tax-saving-fd/">Tax Saving Fixed Deposit Rates</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="tab_drawer_heading" rel="tab15">IFSC<i></i></h3>
+                    <div id="tab15" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/ifsc-code/">IFSC Code</a></li>
+                            <li><a target="_blank" href="/ifsc-code/hdfc-bank/">HDFC IFSC code</a></li>
+                            <li><a target="_blank" href="/ifsc-code/state-bank-of-india/">SBI IFSC code</a></li>
+                            <li><a target="_blank" href="/ifsc-code/punjab-national-bank/">PNB IFSC code</a></li>
+                            <li><a target="_blank" href="/ifsc-code/union-bank-of-india/">Union Bank IFSC code</a></li>
+                            <li><a target="_blank" href="/ifsc-code/icici-bank/">ICICI Bank IFSC code</a></li>
+                            <li><a target="_blank" href="/ifsc-code/bank-of-baroda/">Bank of Baroda IFSC code</a></li>
+                            <li><a target="_blank" href="/ifsc-code/canara-bank/">Canara Bank IFSC code</a></li>
+                            <li><a target="_blank" href="/ifsc-code/central-bank-of-india/">Central Bank of India IFSC code</a></li>
+                            <li><a target="_blank" href="/ifsc-code/axis-bank/">Axis Bank IFSC code</a></li>
+                        </ul>
+                    </div>
+                </div><!-- .tab_container -->
+            </div><!-- .tabs-row -->
+
+            <div class="tabs-row">
+                <ul class="tabs">
+                    <li rel="tab16">Aadhar Card<i></i></li>
+                    <li rel="tab17">PAN<i></i></li>
+                    <li rel="tab18">Saving Schemes<i></i></li>
+                    <li rel="tab19">TAX<i></i></li>
+                    <li rel="tab20">Banking<i></i></li>
+                </ul>
+                <div class="tab_container">
+                    <h3 class="tab_drawer_heading" rel="tab16">Aadhar Card<i></i></h3>
+                    <div id="tab16" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/aadhar-card/">Aadhar Card</a></li>
+                            <li><a target="_blank" href="/aadhar-card/aadhar-card-status/">Aadhar Card Status</a></li>
+                            <li><a target="_blank" href="/aadhar-card/aadhaar-card-update-correction/">Aadhar Card Update/Correction</a></li>
+                            <li><a target="_blank" href="/aadhar-card/aadhaar-card-download-print/">Aadhar Card Download</a></li>
+                            <li><a target="_blank" href="/aadhar-card/aadhaar-card-password/">Aadhar Card Password</a></li>
+                            <li><a target="_blank" href="/aadhar-card/how-to-apply-for-aadhar-card/">Apply New Aadhar Card</a></li>
+                            <li><a target="_blank" href="/aadhar-card/link-aadhar-to-pan-card/">Link PAN to Aadhaar</a></li>
+                            <li><a target="_blank" href="/aadhar-card/aadhaar-card-enrolment-centre/">Aadhaar Enrolment Centre</a></li>
+                            <li><a target="_blank" href="/aadhar-card/maadhaar/">mAadhaar</a></li>
+                            <li><a target="_blank" href="/aadhar-card/uidai/">UIDAI</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="tab_drawer_heading" rel="tab17">PAN<i></i></h3>
+                    <div id="tab17" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/pan-card/">PAN Card</a></li>
+                            <li><a target="_blank" href="/pan-card/know-your-pan-card/">Know Your PAN Card</a></li>
+                            <li><a target="_blank" href="/pan-card/pan-card-details/">PAN Card Details</a></li>
+                            <li><a target="_blank" href="/pan-card/how-to-track-pan-card-status/">Track PAN Card Status</a></li>
+                            <li><a target="_blank" href="/pan-card/pan-card-form/">PAN Card Form</a></li>
+                            <li><a target="_blank" href="/pan-card/documents-required-for-pan-card/">Documents Required For PAN Card</a></li>
+                            <li><a target="_blank" hr target="_blank" ef="/pan-card/pan-card-verification/">PAN Card Verification</a></li>
+                            <li><a target="_blank" href="/pan-card/how-to-apply-online-for-pan-card/">Apply for New PAN Card</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="tab_drawer_heading" rel="tab18">Saving Schemes<i></i></h3>
+                    <div id="tab18" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/saving-schemes/epf/">Employees Provident Fund (EPF)</a></li>
+                            <li><a target="_blank" href="/saving-schemes/universal-account-number/">UAN</a></li>
+                            <li><a target="_blank" href="/saving-schemes/ppf/ ">PPF</a></li>
+                            <li><a target="_blank" href="/saving-schemes/epf-withdrawal-claim-form/">EPF Withdrawal</a></li>
+                            <li><a target="_blank" href="/saving-schemes/uan-member-portal/">UAN Member Portal</a></li>
+                            <li><a target="_blank" href="/saving-schemes/epf-passbook-download/">EPF Passbook</a></li>
+                            <li><a target="_blank" href="/saving-schemes/post-office-investment/">Post Office Schemes</a></li>
+                            <li><a target="_blank" href="/saving-schemes/epf-balance/">EPF Balance</a></li>
+                            <li><a target="_blank" href="/saving-schemes/epfo/">EPFO Schemes</a></li>
+                            <li><a target="_blank" href="/saving-schemes/epf-claim-status/">EPF claim status</a></li>
+                            <li><a target="_blank" href="/saving-schemes/epf-interest-rate/">EPF Interest Rate</a></li>
+                            <li><a target="_blank" href="/saving-schemes/pf-withdrawal-rules/">PF withdrawal Rules</a></li>
+                            <li><a target="_blank" href="/saving-schemes/uan-registration/">UAN Activation</a></li>
+                            <li><a target="_blank" href="/saving-schemes/national-pension-system/">National Pension Schemes (NPS)</a></li>
+                            <li><a target="_blank" href="/saving-schemes/senior-citizen-savings-scheme/">Senior Citizen Savings Scheme (SCSS)</a></li>
+                            <li><a target="_blank" href="/saving-schemes/sukanya-samriddhi-yojana/">Sukanya Samriddhi Yojana (SSY)</a></li>
+                            <li><a target="_blank" href="/saving-schemes/employees-pension-scheme/">Employees Pension Scheme (EPS)</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="tab_drawer_heading" rel="tab19">TAX<i></i></h3>
+                    <div id="tab19" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/tax/income-tax/">Income Tax</a></li>
+                            <li><a target="_blank" href="/tax/gst-rates/">GST Rates</a></li>
+                            <li><a target="_blank" href="/tax/e-filing-of-income-tax/">E-filing Income tax</a></li>
+                            <li><a target="_blank" href="/tax/income-tax-return/">Income Tax Return</a></li>
+                            <li><a target="_blank" href="/tax/vat/">VAT</a></li>
+                            <li><a target="_blank" href="Income Tax Calculator">Income Tax Calculator</a></li>
+                            <li><a target="_blank" href="/tax/income-tax-slab/">Income tax slab</a></li>
+                            <li><a target="_blank" href="/tax/gst-registration/">GST Registration</a></li>
+                            <li><a target="_blank" href="/tax/">Tax</a></li>
+                            <li><a target="_blank" href="/tax/goods-and-services-tax-gst/">GST</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="tab_drawer_heading" rel="tab20">Banking<i></i></h3>
+                    <div id="tab20" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/banking/sbi-balance-enquiry-toll-free-number/">SBI Balance Enquiry</a></li>
+                            <li><a target="_blank" href="/banking/pnb-balance-enquiry/">PNB Balance Enquiry</a></li>
+                            <li><a target="_blank" href="/banking/axis-bank-balance-enquiry/">Axis Bank Balance Enquiry</a></li>
+                            <li><a target="_blank" href="/banking/dd-cancellation-letter/">DD Cancellation Letter</a></li>
+                            <li><a target="_blank" href="/banking/deutsche-bank-net-banking/">Deutsche Bank Netbanking</a></li>
+                            <li><a target="_blank" href="/banking/difference-between-neft-rtgs-imps/">Difference Between NEFT, RTGS and IMPS</a></li>
+                            <li><a target="_blank" href="/banking/icici-bank-mobile-banking/">ICICI Bank Mobile Banking</a></li>
+                            <li><a target="_blank" href="/banking/karur-vysya-bank-net-banking-login/">KVB Netbanking Login</a></li>
+                            <li><a target="_blank" href="/banking/pnb-balance-enquiry/">PNB Balance Enquiry</a></li>
+                            <li><a target="_blank" href="/banking/sbi-balance-enquiry-toll-free-number/">SBI Balance Enquiry</a></li>
+                            <li><a target="_blank" href="/banking/sbi-mobile-banking/">SBI Mobile Banking</a></li>
+                            <li><a target="_blank" href="/banking/sbi-neft/">SBI NEFT</a></li>
+                            <li><a target="_blank" href="/banking/sbi-net-banking/">SBI Net Banking</a></li>
+                            <li><a target="_blank" href="/upi/">UPI</a></li>
+                        </ul>
+                    </div>
+                </div><!-- .tab_container -->
+            </div><!-- .tabs-row -->
+
+            <div class="tabs-row">
+                <ul class="tabs">
+                    <li rel="tab21">Gold Rate<i></i></li>
+                    <li rel="tab22">Others<i></i></li>
+                </ul>
+                <div class="tab_container">
+                    <h3 class="tab_drawer_heading" rel="tab21">Gold Rate<i></i></h3>
+                    <div id="tab21" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/gold-rate/">Gold Rate Today</a></li>
+                            <li><a target="_blank" href="/gold-rate/hyderabad/">Gold Rate in Hyderabad</a></li>
+                            <li><a target="_blank" href="/gold-rate/delhi/">Gold Rate in Delhi</a></li>
+                            <li><a target="_blank" href="/gold-rate/kanpur/">Gold Rate in Kanpur</a></li>
+                            <li><a target="_blank" href="/gold-rate/ahmedabad/">Gold Rate in Ahmedabad</a></li>
+                            <li><a target="_blank" href="/gold-rate/pune/">Gold Rate in Pune</a></li>
+                            <li><a target="_blank" href="/gold-rate/mumbai/">Gold Rate in Mumbai</a></li>
+                            <li><a target="_blank" href="/gold-rate/bangalore/">Gold Rate in Bangalore</a></li>
+                            <li><a target="_blank" href="/gold-rate/kolkata/">Gold Rate in Kolkata</a></li>
+                            <li><a target="_blank" href="/gold-rate/chennai/">Gold Rate in Chennai</a></li>
+                            <li><a target="_blank" href="/gold-rate/jamshedpur/">Gold Rate in Jamshedpur</a></li>
+                            <li><a target="_blank" href="/gold-rate/visakhapatnam/">Gold Rate in Visakhapatnam</a></li>
+                            <li><a target="_blank" href="/gold-rate/varanasi/">Gold Rate in Varanasi</a></li>
+                            <li><a target="_blank" href="/gold-rate/punjab/">Gold Rate in Punjab</a></li>
+                            <li><a target="_blank" href="/gold-rate/lucknow/">Gold Rate in Lucknow</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="tab_drawer_heading" rel="tab22">Others<i></i></h3>
+                    <div id="tab22" class="tab_content">
+                        <ul>
+                            <li><a target="_blank" href="/loan/">Loan</a></li>
+                            <li><a target="_blank" href="/secured-card/">Secured Card</a></li>
+                            <li><a target="_blank" href="/debit-card/">Debit Card</a></li>
+                            <li><a target="_blank" href="/digital-gold/">Digital Gold</a></li>
+                            <li><a target="_blank" href="/financial-institutions-india/">Financial Institutions In India</a></li>
+                            <li><a target="_blank" href="/silver-rates/">Silver Rate</a></li>
+                            <li><a target="_blank" href="/two-wheeler-loan/">Two Wheeler Loan</a></li>
+                            <li><a target="_blank" href="/recurring-deposit/">Recurring Deposit</a></li>
+                        </ul>
+                    </div>
+                </div><!-- .tab_container -->
+            </div><!-- .tabs-row -->
+
+            <a class="sMtoggle more" href="javascript:void(0)">View More</a>
+
+        </div>
+    </div><!-- /.most-searched -->
+    <div class="our-investors">
+        <div class="f-container">
+            <h6>Our Investors</h6>
+            <div class="l-row">
+                <a href="javascript:void(0)"><img src="https://static.paisabazaar.com/components/images//footer/tiger.svg" alt="" /></a>
+                <a href="javascript:void(0)"><img src="https://static.paisabazaar.com/components/images//footer/info-edge.svg" alt="" /></a>
+                <a href="javascript:void(0)"><img src="https://static.paisabazaar.com/components/images//footer/truenorth.svg" alt="" /></a>
+                <a href="javascript:void(0)"><img src="https://static.paisabazaar.com/components/images//footer/steadview.svg" alt="" /></a>
+                <a href="javascript:void(0)"><img src="https://static.paisabazaar.com/components/images//footer/ICP-inventus.svg" alt="" /></a>
+
+                <a href="javascript:void(0)"><img src="https://static.paisabazaar.com/components/images//footer/soft-bank.svg" alt="" /></a>
+                <a href="javascript:void(0)"><img src="https://static.paisabazaar.com/components/images//footer/chiratae.svg" alt="" /></a>
+                <a href="javascript:void(0)"><img src="https://static.paisabazaar.com/components/images//footer/premjiinvest.svg" alt="" /></a>
+                <a href="javascript:void(0)"><img src="https://static.paisabazaar.com/components/images//footer/temasek.svg" alt="" /></a>
+                <a href="javascript:void(0)"><img src="https://static.paisabazaar.com/components/images//footer/rabbit.svg" alt="" /></a>
+            </div>
+        </div>
+    </div><!-- /.our-investors -->
+    <div class="group-companies">
+        <div class="f-container">
+            <h6>Group Companies</h6>
+            <div class="l-row">
+                <a target="_blank" rel="nofollow" href="https://www.policybazaar.com/?utm_source=paisbazaar&utm_medium=home_page_footer_link"><img src="https://static.paisabazaar.com/components/images//footer/policybazaar.svg" alt="" /></a>
+                <a target="_blank" rel="nofollow" href="https://www.quickfixcars.com/home?utm_source=paisbazaar&utm_medium=home_page_footer_link"><img src="https://static.paisabazaar.com/components/images//footer/quickFIXcars.svg" alt="" /></a>
+                <a target="_blank" rel="nofollow" href="http://www.etechaces.com/?utm_source=paisbazaar&utm_medium=home_page_footer_link"><img src="https://static.paisabazaar.com/components/images//footer/Etechaces.svg" alt="" /></a>
+                <a target="_blank" rel="nofollow" href="https://docprime.com/?utm_source=paisbazaar&utm_medium=home_page_footer_link"><img src="https://static.paisabazaar.com/components/images//footer/doc-prime.svg" alt="" /></a>
+            </div>
+        </div>
+    </div><!-- /.group-companies -->
+    <div class="paisabazaar-links">
+        <div class="f-container">
+            <div class="flex-container">
+                <div class="column-1">
+                    <a href="/"><i class="fpb-logo"></i></a>
+                    <ul>
+                        <li><a target="_blank" href="/about-us/">About Us</a></li>
+                        <li><a target="_blank" href="/contact-us/">Contact Us</a></li>
+                        <li><a target="_blank" href="/terms-of-use/">Terms of Use</a></li>
+                        <li><a target="_blank" href="/disclaimer/">Disclaimer</a></li>
+                        <li><a target="_blank" href="/privacy-policy/">Privacy Policy</a></li>
+                        <li><a target="_blank" href="/intellectual-property-policy/">Intellectual Policy</a></li>
+                        <li><a target="_blank" href="/faq/">Company FAQs</a></li>
+                        <li><a target="_blank" href="/awards/">Awards</a></li>
+                        <li><a target="_blank" href="/media/">Media </a></li>
+                        <li><a target="_blank" href="/sitemap/">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="column-2">
+                    <h6>App Download</h6>
+                    <ul class="store-logos">
+                        <li><a target="_blank" href="https://itunes.apple.com/in/app/id1029403201?mt=8"><img src="https://static.paisabazaar.com/components/images//footer/app-store.svg" alt="" /></a></li>
+                        <li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.paisabazaar"><img src="https://static.paisabazaar.com/components/images//footer/google-play.svg" alt="" /></a></li>
+                    </ul>
+                    <h6>Social Media</h6>
+                    <ul class="pb-socials">
+                        <li><a target="_blank" rel="nofollow" href="https://www.facebook.com/Paisabazaar"><img src="https://static.paisabazaar.com/components/images//footer/facebook.svg" alt="facebook" /></a></li>
+                        <li><a target="_blank" rel="nofollow" href="https://in.linkedin.com/company/paisabazaar"><img src="https://static.paisabazaar.com/components/images//footer/linkedin.svg" alt="linkedin" /></a></li>
+                        <li><a target="_blank" rel="nofollow" href="https://twitter.com/PaisaBazaar_in"><img src="https://static.paisabazaar.com/components/images//footer/twitter.svg" alt="twitter" /></a></li>
+                        <li><a target="_blank" rel="nofollow" href="https://www.youtube.com/channel/UC7YUrsXvsWdidfUNjDUOACg"><img src="https://static.paisabazaar.com/components/images//footer/youtube.svg" alt="youtube" /></a></li>
+                        <li><a target="_blank" rel="nofollow" href="https://www.instagram.com/paisabazaar_pb/   "><img src="https://static.paisabazaar.com/components/images//footer/instagram.svg" alt="instagram" /></a></li>
+                    </ul>
+                </div>
+            </div><!-- /.flex-container -->
+            <hr />
+            <p class="copyright">&copy; Copyright 2010-2019 Paisabazaar.com. All Rights Reserved.<br>
+                *No. 1 in terms of loan disbursal as per industry estimates</p>
+        </div>
+    </div><!-- /.paisabazaar-links -->
+</div><!-- /.footer-container -->
+
+
+<script type="text/javascript">
+    $("ul.tabs li").click(function() {
+        if ($(this).hasClass('active')) {
+            $("ul.tabs li").removeClass("active");
+            $(".tab_drawer_heading").removeClass("d_active");
+        } else {
+
+            var activeTab = $(this).attr("rel");
+            var d_activeTab = $(this).attr("rel");
+            $("#" + activeTab).addClass('active');
+
+            $("ul.tabs li").removeClass("active");
+            $(this).addClass("active");
+            $(".tab_drawer_heading").removeClass("d_active");
+            $(".tab_drawer_heading[rel='" + activeTab + "']").addClass("d_active");
+        }
+    });
+    /* if in drawer mode */
+    $(".tab_drawer_heading").click(function() {
+
+        if ($(this).hasClass('d_active')) {
+            $(".tab_drawer_heading").removeClass("d_active");
+            $("ul.tabs li").removeClass("active");
+        } else {
+            var d_activeTab = $(this).attr("rel");
+            $(".tab_drawer_heading").removeClass("d_active");
+            $(this).addClass("d_active");
+
+            $("ul.tabs li").removeClass("active");
+            $("ul.tabs li[rel='" + d_activeTab + "']").addClass("active");
+        }
+    });
+
+    $(".sMtoggle").click(function() {
+        $(".f-container").find(".tabs-row:not(:first)").toggleClass('block-all');
+        $(this).toggleClass('less');
+        if ($(this).text() == "View More")
+            $(this).text("View Less")
+        else
+            $(this).text("View More");
+    });
+</script>
+
+    <link rel="stylesheet" type="text/css" href="/learn/wp-content/themes/voice/js/source/jquery.fancybox.min.css?v=2.1.5" media="screen" />
+    <script type="text/javascript" src="/learn/wp-content/themes/voice/js/source/jquery.fancybox.min.js?v=2.1.5"></script>
+    <script>
+        (function($) {
+            $(".fancybox").fancybox({
+                'autoResize': false,
+                'fitToView': false,
+                'scrolling': 'yes'
+            });
+        })(jQuery);
+    </script>
+    <link href="https://static.paisabazaar.com/components/skins/dynamicFooter.min.css" media="all" rel="stylesheet" type="text/css" />
+    
+        </div>
+        <!--footer Part Ends Here-->
+	<!-- Promotion App Box -->
+        	 <!--Promotion App Box -->
+		
+		
+             <!--<div id="feedback_form"></div>-->
+    	
+
+    	
+		
+        <!--footer Part Ends Here-->
+           
+    <div id="fade-body" class="display-none"></div>
+    <div id="light-box" class="display-none">
+        <div id="html-content" class="container"></div>
+    </div>
+	
+	<!--FOR COMPARE POP-UP PAGE-->
+	<div class="compare-popup display-none"></div>
+	
+                    <script type="text/javascript">
+        setTimeout(function() {
+            var a = document.createElement("script");
+            var b = document.getElementsByTagName("script")[0];
+            a.src = document.location.protocol + "//dnn506yrbagrg.cloudfront.net/pages/scripts/0027/3619.js?" + Math.floor(new Date().getTime() / 3600000);
+            a.async = true;
+            a.type = "text/javascript";
+            b.parentNode.insertBefore(a, b)
+        }, 1);
+    </script>
+        <script>_satellite.pageBottom();</script>
+     <script type="text/javascript" src="/components/javascript/carousel.min.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d3e9a03dab","applicationID":"130101040","transactionName":"ZgdXYERSC0VYUk0NVl9NYEZfHAxYXVRBSklZEg==","queueTime":0,"applicationTime":17,"atts":"SkBUFgxIGEs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
